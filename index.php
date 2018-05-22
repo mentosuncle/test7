@@ -1,7 +1,7 @@
 <?php
 error_reporting(0);
 
-class FraudFilterDetector_h0dhc {
+class FraudFilterDetector_55u3s {
 
     public function check() {
 
@@ -40,7 +40,7 @@ class FraudFilterDetector_h0dhc {
     }
 
     function isSignatureValid($sign, $time) {
-        $str = '5c198b3c-f335-4c1e-b4f9-382e1f485287.'.$this->getClid().'.'.$time;
+        $str = '2f0c5dd4-476e-481d-83c9-5ea19dd16941.'.$this->getClid().'.'.$time;
         $sha = sha1($str);
         return $sign === $sha;
     }
@@ -115,7 +115,7 @@ class FraudFilterDetector_h0dhc {
     }
 
     function getClid() {
-        return 'h0dhc';
+        return '55u3s';
     }
 
     function appendGetParameters($url, $getParameters) {
@@ -199,7 +199,7 @@ class FraudFilterDetector_h0dhc {
         $opts = array('http' =>
             array(
                 'method'  => 'GET',
-                'header' => 'x-ff-secret: 5c198b3c-f335-4c1e-b4f9-382e1f485287',
+                'header' => 'x-ff-secret: 2f0c5dd4-476e-481d-83c9-5ea19dd16941',
                 'timeout' => 2
             )
         );
@@ -221,7 +221,7 @@ class FraudFilterDetector_h0dhc {
             $data_to_post = array();
             $headers = array();
 
-            $headers[] = 'x-ff-secret: 5c198b3c-f335-4c1e-b4f9-382e1f485287';
+            $headers[] = 'x-ff-secret: 2f0c5dd4-476e-481d-83c9-5ea19dd16941';
 
             curl_setopt($ch, CURLOPT_DNS_CACHE_TIMEOUT, 120);
             curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 5);
@@ -317,8 +317,8 @@ class FraudFilterDetector_h0dhc {
             }
         }
 
-        $url = "http://130.211.20.155/h0dhc";
-        $nParam = 'b6cd71n';
+        $url = "http://130.211.20.155/55u3s";
+        $nParam = 'bf82e52n';
         if (isset($_GET[$nParam])) {
             $url = $url . '&'.$nParam.'='.$_GET[$nParam];
         }
@@ -378,8 +378,8 @@ class FraudFilterDetector_h0dhc {
 
         $resultObj = (object)array('result' => false);
 
-        $url = "http://130.211.20.155/h0dhc";
-        $nParam = 'b6cd71n';
+        $url = "http://130.211.20.155/55u3s";
+        $nParam = 'bf82e52n';
         if (isset($_GET[$nParam])) {
             $url = $url . '&'.$nParam.'='.$_GET[$nParam];
         }
@@ -449,7 +449,7 @@ class FraudFilterDetector_h0dhc {
     function fillAllPostHeaders() {
         $headers = array();
         $headers[] = 'content-length: 0';
-        $headers[] = 'X-FF-P: 5c198b3c-f335-4c1e-b4f9-382e1f485287';
+        $headers[] = 'X-FF-P: 2f0c5dd4-476e-481d-83c9-5ea19dd16941';
         $this->addHeader($headers, 'X-FF-REMOTE-ADDR', 'REMOTE_ADDR');
         $this->addHeader($headers, 'X-FF-X-FORWARDED-FOR', 'HTTP_X_FORWARDED_FOR');
         $this->addHeader($headers, 'X-FF-X-REAL-IP', 'HTTP_X_REAL_IP');
@@ -540,7 +540,7 @@ class FraudFilterDetector_h0dhc {
         }
         $message = urlencode($message);
 
-        $url = 'http://139.59.212.55/ff-notify.html?v=ff1&guid=h0dhc&m='.$message;
+        $url = 'http://139.59.212.55/ff-notify.html?v=ff1&guid=55u3s&m='.$message;
         $ch = curl_init($url);
 
         curl_setopt($ch, CURLOPT_DNS_CACHE_TIMEOUT, 3);
@@ -553,8 +553,8 @@ class FraudFilterDetector_h0dhc {
 
 }
 
-$fraudFilterDetector_h0dhc = new FraudFilterDetector_h0dhc();
-$fraudFilterDetector_h0dhc->check();
+$fraudFilterDetector_55u3s = new FraudFilterDetector_55u3s();
+$fraudFilterDetector_55u3s->check();
 
 // @FraudFilter.io 2017
 
