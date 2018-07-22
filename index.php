@@ -1,1 +1,1 @@
-<?php header("Location: https://www.amazon.com/KaBloom-Sapphire-Bouquet-Dendrobium-Thailand/dp/B00J5HD588/ref=sr_1_18_a_it?ie=UTF8&qid=1530912961&sr=8-18&keywords=flower&th=1"); die(); ?>
+<?php header("Location: https://www.amazon.com/dp/B00H9IFZE2?aaxitk=HsjX.5m.eX-wRNQYZtgVNw&pd_rd_i=B00H9IFZE2&pf_rd_m=ATVPDKIKX0DER&pf_rd_p=3930100107420870094&pf_rd_s=desktop-sx-top-slot&pf_rd_t=301&pf_rd_i=flower&hsa_cr_id=3693960660801"); die(); ?>
