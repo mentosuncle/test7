@@ -1,1 +1,1 @@
-<?php header("Location: https://hertel.ca/en/products/disinfectant-toilet-cleaner"); die(); ?>
+<?php header("Location: http://www.drumnstrum.com/lessons/"); die(); ?>
